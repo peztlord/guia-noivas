@@ -18,7 +18,7 @@ export default function Home() {
       <ProductSection />
       <AIFeatures />
       <PricingOffer checkoutUrl={checkoutUrl} />
-      <BonusTimer />
+      <BonusTimer checkoutUrl={checkoutUrl} />
       <FAQSection />
       <FooterCTA checkoutUrl={checkoutUrl} />
     </main>
