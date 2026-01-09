@@ -12,7 +12,14 @@ export default function HeroSection({ checkoutUrl }: HeroSectionProps) {
   return (
     <section className="relative min-h-screen flex items-center justify-center px-4 py-20 overflow-hidden">
       {/* Background gradient overlay */}
-      <div className="absolute inset-0 bg-gradient-to-br from-[#1a1614] via-[#2d2420] to-[#1a1614]" />
+      <div
+        className="absolute inset-0 bg-cover bg-no-repeat bg-center"
+        style={{
+            backgroundBlendMode: 'darken',
+            backgroundColor: 'rgb(0,0,0,0.8)',
+            backgroundImage: 'url(https://i.pinimg.com/originals/55/bf/a5/55bfa56f06bce8df93745ba8a2912818.jpg)',
+        }}
+        />
       
       {/* Decorative elements */}
       <div className="absolute top-20 left-10 w-72 h-72 bg-[#d4a574]/10 rounded-full blur-3xl" />
@@ -61,16 +68,6 @@ export default function HeroSection({ checkoutUrl }: HeroSectionProps) {
           <span className="text-white">sem Surtar</span>
         </motion.h1>
 
-        {/* Subheadline */}
-        {/* <motion.p
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.4 }}
-          className="text-md md:text-xl text-[#a89a8c] max-w-3xl mx-auto mb-4 leading-relaxed font-light"
-        >
-          (e com uma Assessora de Graça disponível 24h)
-        </motion.p> */}
-
         <motion.p
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
@@ -78,27 +75,28 @@ export default function HeroSection({ checkoutUrl }: HeroSectionProps) {
           className="text-base md:text-lg text-gray-300 max-w-2xl mx-auto mb-12 leading-relaxed"
         >
           Descubra o método inédito que une o passo a passo tradicional à 
-          <span className="text-[#e8b4b8]"> Inteligência Artificial </span> 
+          <span className="text-[#d4a574]"> Inteligência Artificial </span> 
           para você economizar tempo, dinheiro e sanidade. Do "Sim" ao altar, sem virar uma "Bridezilla".
         </motion.p>
 
         {/* CTA Button */}
         <motion.div
-          initial={{ opacity: 0, scale: 0.9 }}
+          initial={{ opacity: 0, scale: 0.6 }}
           animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.6, delay: 0.7 }}
+          transition={{ duration: 0.9, delay: 0.5 }}
         >
           <a href={checkoutUrl}>
-            <button 
+            <button
               type="button"
-              className="bg-gradient-to-r from-[#e8b4b8] to-[#d4a574] hover:from-[#dba5a9] hover:to-[#c99665] text-[#1a1614] font-semibold text-md px-10 py-7 rounded-full shadow-2xl shadow-[#e8b4b8]/20 transition-all duration-300 hover:scale-105 hover:shadow-[#e8b4b8]/30"
+              className="
+                bg-gradient-to-r from-yellow-700/80 via-amber-200/70 to-yellow-700/80 
+                hover:from-yellow-800 hover:via-amber-300 hover:to-yellow-800 text-white
+                font-bold text-md px-4 py-3 rounded-xl shadow-2xl drop-shadow-[0_1px_1px_rgba(0,0,0,0.8)]
+                shadow-[#e8b4b8]/20 transition-all duration-300 hover:scale-105 hover:shadow-[#e8b4b8]/30"
             >
               QUERO GUIA DOS SONHOS
             </button>
           </a>
-          <p className="text-sm text-gray-300 mt-4">
-            Promoção Exclusiva de Janeiro
-          </p>
         </motion.div>
 
         {/* Trust indicator */}

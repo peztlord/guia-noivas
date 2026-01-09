@@ -33,7 +33,14 @@ const aiFeatures = [
 
 export default function AIFeatures() {
   return (
-    <section className="relative py-24 px-4 bg-gradient-to-b from-[#1a1614] to-[#2d2420] overflow-hidden">
+    <section
+      className="relative py-24 px-4 overflow-hidden bg-cover bg-no-repeat"
+      style={{
+            backgroundBlendMode: 'darken',
+            backgroundColor: 'rgb(0,0,0,0.8)',
+            backgroundImage: 'url(https://i.pinimg.com/originals/4b/f9/c8/4bf9c83cc144158f4cb885cf78afff19.jpg)',
+      }}
+    >
       {/* Background decorations */}
       <div className="absolute top-0 left-1/4 w-96 h-96 bg-[#d4a574]/5 rounded-full blur-3xl" />
       <div className="absolute bottom-0 right-1/4 w-80 h-80 bg-[#e8b4b8]/5 rounded-full blur-3xl" />

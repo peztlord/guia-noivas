@@ -103,9 +103,13 @@ export default function PricingOffer({ checkoutUrl }: PricingOfferProps) {
 
                 {/* CTA Button */}
                 <a href={checkoutUrl}>
-                  <button 
+                  <button
                     type="button"
-                    className="bg-gradient-to-r from-[#e8b4b8] to-[#d4a574] hover:from-[#dba5a9] hover:to-[#c99665] text-[#1a1614] font-semibold text-md px-10 py-7 rounded-full shadow-2xl shadow-[#e8b4b8]/20 transition-all duration-300 hover:scale-105 hover:shadow-[#e8b4b8]/30"
+                    className="
+                      bg-gradient-to-r from-yellow-700/90 via-amber-200/90 to-yellow-700/90 
+                      hover:from-yellow-800 hover:via-amber-300 hover:to-yellow-800 text-white
+                      font-bold text-md px-4 py-3 rounded-xl shadow-2xl drop-shadow-[0_1px_1px_rgba(0,0,0,0.6)]
+                      shadow-[#e8b4b8]/20 transition-all duration-300 hover:scale-105 hover:shadow-[#e8b4b8]/30"
                   >
                     QUERO GUIA DOS SONHOS
                   </button>

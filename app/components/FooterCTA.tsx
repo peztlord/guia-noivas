@@ -11,7 +11,14 @@ interface FooterCTAProps {
 
 export default function FooterCTA({ checkoutUrl }: FooterCTAProps) {
   return (
-    <footer className="relative py-24 px-4 bg-gradient-to-b from-[#1a1614] to-[#0d0c0b] overflow-hidden">
+    <footer
+      className="relative py-24 px-4 overflow-hidden bg-cover bg-no-repeat bg-center"
+      style={{
+            backgroundBlendMode: 'darken',
+            backgroundColor: 'rgb(0,0,0,0.8)',
+            backgroundImage: 'url(https://i.pinimg.com/originals/90/7e/fd/907efd6fb061c56e7b6e18ef823da2f4.jpg)',
+      }}
+    >
       {/* Background decorations */}
       <div className="absolute top-0 left-1/4 w-96 h-96 bg-[#d4a574]/5 rounded-full blur-3xl" />
       <div className="absolute bottom-0 right-1/3 w-80 h-80 bg-[#e8b4b8]/5 rounded-full blur-3xl" />
@@ -74,9 +81,13 @@ export default function FooterCTA({ checkoutUrl }: FooterCTAProps) {
             className="mb-12"
           >
             <a href={checkoutUrl}>
-              <button 
-              type="button"
-              className="bg-gradient-to-r from-[#e8b4b8] to-[#d4a574] hover:from-[#dba5a9] hover:to-[#c99665] text-[#1a1614] font-semibold text-md px-10 py-7 rounded-full shadow-2xl shadow-[#e8b4b8]/20 transition-all duration-300 hover:scale-105 hover:shadow-[#e8b4b8]/30"
+              <button
+                type="button"
+                className="
+                  bg-gradient-to-r from-yellow-700/80 via-amber-200/70 to-yellow-700/80 
+                  hover:from-yellow-800 hover:via-amber-300 hover:to-yellow-800 text-white
+                  font-bold text-md px-4 py-3 rounded-xl shadow-2xl drop-shadow-[0_1px_1px_rgba(0,0,0,0.8)]
+                  shadow-[#e8b4b8]/20 transition-all duration-300 hover:scale-105 hover:shadow-[#e8b4b8]/30"
               >
                 QUERO GUIA DOS SONHOS
               </button>

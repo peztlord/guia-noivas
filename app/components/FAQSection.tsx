@@ -117,7 +117,14 @@ export default function FAQSection() {
           transition={{ duration: 0.8, delay: 0.4 }}
           className="mt-16"
         >
-          <div className="bg-gradient-to-br from-[#2d2420] to-[#1a1614] rounded-3xl p-8 md:p-10 text-center">
+          <div
+            className="rounded-3xl p-8 md:p-10 text-center"
+            style={{
+                backgroundBlendMode: 'darken',
+                backgroundColor: 'rgb(0,0,0,0.8)',
+                backgroundImage: 'url(https://i.pinimg.com/474x/ff/df/25/ffdf2515d70406d5c063ccc1543481d0.jpg)',
+            }}
+          >
             <div className="w-20 h-20 mx-auto mb-6 rounded-full bg-gradient-to-br from-[#d4a574]/20 to-[#e8b4b8]/20 flex items-center justify-center">
               <ShieldCheck className="w-10 h-10 text-[#d4a574]" />
             </div>
@@ -126,7 +133,7 @@ export default function FAQSection() {
               Garantia <span className="text-[#d4a574]">Incondicional</span>
             </h3>
             
-            <p className="text-[#a89a8c] text-lg max-w-lg mx-auto leading-relaxed">
+            <p className="text-white text-lg max-w-lg mx-auto leading-relaxed">
               Se você não amar o conteúdo, devolvemos seus <span className="text-[#d4a574]">R$ 9,90</span>. 
               Sem perguntas, sem burocracia. O risco é todo nosso.
             </p>
